@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Adari Shiva Shankar | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Inter,sans-serif;
+background:#050816;
+color:#e5e7eb;
+overflow-x:hidden
+}
+section{padding:90px 20px;max-width:1300px;margin:auto}
+h1,h2,h3{font-family:Orbitron;color:#38bdf8}
+p{color:#cbd5f5;font-size:.95rem}
+
+/* NAV */
+nav{
+position:fixed;top:0;width:100%;
+background:rgba(5,8,22,.85);
+backdrop-filter:blur(14px);
+padding:16px 40px;
+display:flex;justify-content:space-between;
+z-index:1000
+}
+nav a{color:#fff;margin-left:22px;text-decoration:none;font-weight:600}
+nav a:hover{color:#38bdf8}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center
+}
+
+/* 🔥 ENHANCED NAME ONLY */
+.hero-name{
+font-family:Orbitron;
+font-size:4.6rem;
+font-weight:900;
+letter-spacing:3px;
+background:linear-gradient(
+120deg,
+#22d3ee,
+#38bdf8,
+#a855f7,
+#22d3ee
+);
+background-size:300% 300%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:
+gradientFlow 6s ease infinite,
+nameReveal 1.4s ease-out forwards;
+text-shadow:
+0 0 25px rgba(56,189,248,.45),
+0 0 60px rgba(168,85,247,.25)
+}
+
+@keyframes gradientFlow{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+@keyframes nameReveal{
+0%{opacity:0;transform:translateY(30px) scale(.95)}
+100%{opacity:1;transform:none}
+}
+
+.hero-role{
+font-size:1.4rem;
+margin-top:14px;
+color:#cbd5f5
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+padding:14px 36px;
+margin:10px;
+border-radius:40px;
+border:2px solid rgba(56,189,248,.6);
+color:#38bdf8;
+text-decoration:none;
+font-weight:700;
+transition:.4s
+}
+.btn:hover{
+background:#38bdf8;
+color:#020617;
+box-shadow:0 0 30px rgba(56,189,248,.6)
+}
+
+/* GRID */
+.grid{display:grid;gap:30px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+
+/* GLASS */
+.glass{
+background:linear-gradient(120deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+backdrop-filter:blur(14px);
+border-radius:18px;
+padding:25px;
+transition:.5s
+}
+.glass:hover{
+transform:translateY(-10px);
+box-shadow:0 0 35px rgba(56,189,248,.25)
+}
+
+/* TAG */
+.tag{
+display:inline-block;
+padding:6px 14px;
+margin:10px 0;
+background:rgba(56,189,248,.15);
+color:#38bdf8;
+border-radius:20px;
+font-size:.75rem
+}
+
+/* PROJECT ICONS */
+.project-links a{
+margin-right:16px;
+font-size:1.4rem;
+color:rgba(56,189,248,.7);
+transition:.4s
+}
+.project-links a:hover{
+color:#fff;
+text-shadow:0 0 18px rgba(56,189,248,.8)
+}
+
+/* TIMELINE */
+.timeline{
+border-left:3px solid rgba(56,189,248,.5);
+padding-left:30px
+}
+.timeline .glass{margin-bottom:30px}
+
+/* CONTACT */
+.contact-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+width:100%;
+padding:16px;
+margin:10px 0;
+border-radius:16px;
+border:2px solid rgba(56,189,248,.6);
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+transition:.4s
+}
+.contact-btn:hover{
+background:#38bdf8;
+color:#020617;
+box-shadow:0 0 25px rgba(56,189,248,.7)
+}
+
+/* SCROLL */
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s
+}
+.reveal.show{
+opacity:1;
+transform:none
+}
+
+footer{text-align:center;padding:40px;color:#94a3b8}
+</style>
+</head>
+
+<body>
+
+<nav>
+<strong>Adari Shiva Shankar</strong>
+<div>
+<a href="#projects">Projects</a>
+<a href="#ongoing">Ongoing</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1 class="hero-name">Adari Shiva Shankar</h1>
+<div class="hero-role">AI / ML Engineer & Full-Stack Developer</div>
+
+<p>
+AI & Machine Learning engineer experienced in real-world ML systems,
+MLOps pipelines, analytics dashboards, and intelligent automation.
+</p>
+
+<div style="margin:25px 0">
+<a href="#projects" class="btn">Projects</a>
+<a href="#ongoing" class="btn">Ongoing Projects</a>
+<a href="#experience" class="btn">Internships</a>
+</div>
+
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+</div>
+</section>
+
+<!-- COMPLETED PROJECTS -->
+<section id="projects">
+<h2>Completed Projects</h2><br>
+<div class="grid grid-3 reveal">
+
+<div class="glass"><h3>End-to-End MLOps Pipeline</h3><p>CI/CD, monitoring, deployment.</p><span class="tag">2024–2025</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Predictive Stock & Logistics Optimizer</h3><p>LSTM forecasting & optimization.</p><span class="tag">2024</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Stock Price Prediction</h3><p>Deep learning forecasting.</p><span class="tag">2023</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Credit Card Fraud Detection</h3><p>Fraud classification model.</p><span class="tag">2023</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Email Spam Detection</h3><p>NLP-based spam detection.</p><span class="tag">2023</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Fake News Detection</h3><p>Deep learning misinformation.</p><span class="tag">2023</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>YOLO Object Detection</h3><p>Real-time detection.</p><span class="tag">2024</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Face Recognition Attendance</h3><p>Automated attendance system.</p><span class="tag">2024</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Emotion Detection System</h3><p>CNN emotion recognition.</p><span class="tag">2024</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Movie Recommendation System</h3><p>Collaborative filtering.</p><span class="tag">2023</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Retail Supply Chain Dashboard</h3><p>BI analytics dashboard.</p><span class="tag">2024</span><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+</div>
+</section>
+
+<!-- ONGOING -->
+<section id="ongoing">
+<h2>Ongoing Projects</h2><br>
+<div class="grid grid-2 reveal">
+
+<div class="glass"><h3>Research Financial Market Analyst</h3><p>AI-driven market research.</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>AI Code Optimizer & Generator</h3><p>Automated code generation.</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>Research AI Assistant</h3><p>Academic automation.</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+<div class="glass"><h3>MuzicWorld</h3><p>AI music platform.</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Internship Experience</h2><br>
+<div class="timeline reveal">
+
+<div class="glass"><h3>SkillDzire – Web & Cloud Intern</h3><span class="tag">Oct 2025 – Present</span><p>Full-stack & cloud deployment.</p><a href="#">Certificate</a></div>
+
+<div class="glass"><h3>SmartInternz – Data Analytics Intern</h3><span class="tag">Dec 2025 – Present</span><p>Analytics & dashboards.</p><a href="#">Certificate</a></div>
+
+<div class="glass"><h3>AIMER Society – AI & ML Intern</h3><span class="tag">2024 – 2025</span><p>ML model development.</p><a href="#">Certificate</a></div>
+
+<div class="glass"><h3>Dexterity – AI Intern</h3><span class="tag">2024</span><p>AI fundamentals.</p><a href="#">Certificate</a></div>
+
+<div class="glass"><h3>InternzLearn – ML Intern</h3><span class="tag">2023</span><p>ML algorithms.</p><a href="#">Certificate</a></div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2><br>
+<div class="grid grid-2 reveal">
+
+<div class="glass">
+<a class="contact-btn" href="mailto:yourmail@gmail.com"><i class="fa fa-envelope"></i> Gmail</a>
+<a class="contact-btn" href="tel:+91XXXXXXXXXX"><i class="fa fa-phone"></i> Phone</a>
+<a class="contact-btn" href="#"><i class="fab fa-github"></i> GitHub</a>
+<a class="contact-btn" href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+</div>
+
+<div class="glass">
+<p>Open to internships, full-time roles, and freelance opportunities.</p>
+</div>
+
+</div>
+</section>
+
+<footer>© 2026 Adari Shiva Shankar</footer>
+
+<script>
+const reveals=document.querySelectorAll(".reveal");
+window.addEventListener("scroll",()=>{
+reveals.forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
